@@ -1,0 +1,96 @@
+/*Обнуление*/
+
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/* //////////////////////////////////////////////////// */
+
+.contacts {
+}
+.contacts__wrap {
+	padding: 15px 0 0 0;
+	text-align: center;
+
+	background-color: rgb(28, 104, 104);
+	border-radius: 15px;
+}
+.contacts__title {
+	font-size: 25px;
+	margin: 0 0 20px 0;
+}
+.contacts__title::before{
+	content: "";
+	display: inline-block;
+	background: url(../img/privet.png) 0 / contain no-repeat;
+	width: 100px;
+	height: 100px;
+}
+.contacts__list {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.contacts__item {
+	font-size: 18px;
+	margin: 0 0 15px 0;
+}
+.contacts__item a{
+	color: white;
+}
+.contacts__item:nth-child(1)::before{
+	content: " ";
+	display: inline-block;
+	background: url(../img/logo/IMG_6416.PNG) 0 / cover no-repeat;
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+	border-radius: 50%;
+}
+.contacts__item:nth-child(2)::before{
+	content: " ";
+	display: inline-block;
+	background: url(../img/logo/IMG_6415.PNG) 0 / cover no-repeat;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+}
+.contacts__list::after{
+	content: " ";
+	display: inline-block;
+	background: url(../img/privet-2.png) 0 / cover no-repeat;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	left: 250px;
+}
